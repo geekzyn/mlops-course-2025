@@ -185,6 +185,9 @@ def mlflow_main():
         mlflow.register_model(model_uri, model_name)
 ```
 
+mlflow ui
+mlflow ui --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns
+
 ### MLflow Benefits
 - **Experiment Comparison**: Track multiple model runs and compare performance
 - **Parameter Tracking**: Automatically log hyperparameters and model configurations
